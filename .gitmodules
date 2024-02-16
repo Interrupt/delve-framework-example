@@ -1,3 +1,0 @@
-[submodule "libs/delve-framework"]
-	path = libs/delve-framework
-	url = https://github.com/nezvers/delve-framework.git
