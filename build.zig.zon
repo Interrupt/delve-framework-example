@@ -5,7 +5,7 @@
     "libs.zig",
 }, .dependencies = .{
     .delve = .{
-        .url = "git+https://github.com/nezvers/delve-framework.git#4f7e39b55bb46f14c52c3659ab39e9c69a20c25c",
-        .hash = "1220d022b8466535478c199963bdb1856357e389c643689f7f1fdb2c89ae50fe1e56",
+        .url = "git+https://github.com/nezvers/delve-framework.git#5781de31a48226ad1e091285a38cee370a6e4e34",
+        .hash = "1220a795727e2085dfcc2f220f1f26148f075a463bc611c35447567d221a9ffdff82",
     },
 } }
