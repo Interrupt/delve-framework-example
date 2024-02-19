@@ -4,10 +4,6 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const delve = b.dependency("delve", .{
-        .target = target,
-        .optimize = optimize,
-    });
 
     const exe = b.addExecutable(.{
         .name = "delve-framework-example",
@@ -16,8 +12,11 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    exe.addModule("delve", delve.module("delve"));
-    exe.linkLibrary(delve.artifact("delve"));
+    const delve = b.dependency("delve", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    exe.root_module.addImport("delve", delve.module("delve"));
 
     b.installArtifact(exe);
     const run = b.addRunArtifact(exe);
