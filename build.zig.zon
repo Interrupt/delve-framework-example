@@ -8,8 +8,8 @@
     },
     .dependencies = .{
         .delve = .{
-            .url = "https://github.com/interrupt/delve-framework/archive/refs/tags/0.0.8.tar.gz",
-            .hash = "1220015343cafdca554beca5d168f1ddd5e2100efda43b218d71ad424a85136fa273",
+            .url = "git+https://github.com/photex/delve-framework.git#df957083f3489a457ff383d47280b1e87632d371",
+            .hash = "1220e61711800778960fc3e0a4a47189783ed97bf327cd6a67de64717c9c6eb517c1",
         },
     }
 }
